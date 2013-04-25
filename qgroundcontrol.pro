@@ -227,7 +227,9 @@ FORMS += src/ui/MainWindow.ui \
     src/ui/QGCHilConfiguration.ui \
     src/ui/QGCHilFlightGearConfiguration.ui \
     src/ui/QGCHilJSBSimConfiguration.ui \
-    src/ui/QGCHilXPlaneConfiguration.ui
+    src/ui/QGCHilXPlaneConfiguration.ui \
+    src/ui/designer/QGCComboBox.ui \
+    src/ui/designer/QGCTextLabel.ui
 INCLUDEPATH += src \
     src/ui \
     src/ui/linechart \
@@ -370,7 +372,9 @@ HEADERS += src/MG.h \
     src/ui/QGCHilConfiguration.h \
     src/ui/QGCHilFlightGearConfiguration.h \
     src/ui/QGCHilJSBSimConfiguration.h \
-    src/ui/QGCHilXPlaneConfiguration.h
+    src/ui/QGCHilXPlaneConfiguration.h \
+    src/ui/designer/QGCComboBox.h \
+    src/ui/designer/QGCTextLabel.h
 
 # Google Earth is only supported on Mac OS and Windows with Visual Studio Compiler
 macx|macx-g++|macx-g++42|win32-msvc2008|win32-msvc2010::HEADERS += src/ui/map3D/QGCGoogleEarthView.h
@@ -532,7 +536,9 @@ SOURCES += src/main.cc \
     src/ui/QGCHilConfiguration.cc \
     src/ui/QGCHilFlightGearConfiguration.cc \
     src/ui/QGCHilJSBSimConfiguration.cc \
-    src/ui/QGCHilXPlaneConfiguration.cc
+    src/ui/QGCHilXPlaneConfiguration.cc \
+    src/ui/designer/QGCComboBox.cc \
+    src/ui/designer/QGCTextLabel.cc
 
 # Enable Google Earth only on Mac OS and Windows with Visual Studio compiler
 macx|macx-g++|macx-g++42|win32-msvc2008|win32-msvc2010::SOURCES += src/ui/map3D/QGCGoogleEarthView.cc
